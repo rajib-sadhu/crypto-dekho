@@ -2,7 +2,7 @@ import React from 'react';
 
 const TrendingCoin = ({crypto}) => {
     console.log(crypto);
-    // let profit = crypto?.price_change_percentage_24h >= 0;
+    let profit = crypto?.price_change_percentage_24h >= 0;
     return (
         <div>
             <img src={crypto?.image} alt="" />
