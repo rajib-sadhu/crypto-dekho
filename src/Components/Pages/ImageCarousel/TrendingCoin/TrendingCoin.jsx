@@ -4,9 +4,9 @@ const TrendingCoin = ({crypto}) => {
     console.log(crypto);
     let profit = crypto?.price_change_percentage_24h >= 0;
     return (
-        <div>
-            <img src={crypto?.image} alt="" />
-            <h3>{crypto?.name} 
+        <div className='flex flex-col justify-center w-full gap-2 text-center'>
+            <img className='w-20 mx-auto' src={crypto?.image} alt="" />
+            <h3 className='text-white text-lg'>{crypto?.symbol} 
             <span>
           {crypto?.symbol}
           &nbsp;
@@ -20,7 +20,7 @@ const TrendingCoin = ({crypto}) => {
           </span>
         </span>
              </h3>
-            <p>{crypto?.current_price}</p>
+            <p className='text-white'> ₹ {crypto?.current_price}</p>
         </div>
     );
 };
