@@ -39,7 +39,7 @@ const Header = () => {
                     {isOpen ? <RxCross1 className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
                 </div>
                 <div className="flex-none" >
-                    <ul className={`md:menu md:menu-horizontal px-1 space-x-2 md:static absolute md:flex duration-500 z-10 ${isOpen?'top-16' : '-top-60'} md:p-2 left-0 bg-black  space-y-4 w-full text-white p-3 text-center `}>
+                    <ul className={`md:menu md:menu-horizontal px-1 space-x-2 md:static absolute md:flex duration-500 z-10 ${isOpen?'top-16' : '-top-60'} md:p-2 left-0 md:bg-transparent bg-slate-500 md:space-y-0 space-y-4 w-full p-3 text-center `}>
                         <li><ActiveLink to='/home'>Home</ActiveLink></li>
                         <li><ActiveLink to='/about'>About</ActiveLink></li>
                         <li><ActiveLink to='/contact'>Contact Us</ActiveLink></li>
