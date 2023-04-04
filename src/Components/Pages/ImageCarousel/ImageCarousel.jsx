@@ -63,7 +63,7 @@ const ImageCarousel = () => {
 const ImageSection = ({img})=>{
     return(
         <div className='flex justify-center w-full'>
-            <img title='Crypto Dekho Banner' className='h-[20rem] w-full' src={img} alt="Crypto Dekho" />
+            <img title='Crypto Dekho Banner' className='h-[16rem] w-full' src={img} alt="Crypto Dekho" />
         </div>
     )
 }
@@ -73,17 +73,17 @@ const ImageSection = ({img})=>{
 const images = [
     {
         id: 1,
-        imageUrl: 'https://i.ibb.co/NWzk12h/Shop-New-Products-Website-Banner-Brown-White-Tan.png'
+        imageUrl: 'https://i.ibb.co/6tnCv5G/Untitled-design-1.png'
 
     },
     {
         id: 2,
-        imageUrl: 'https://i.ibb.co/Y2tsGBx/Shop-New-Products-Website-Banner-Brown-White-Tan-1.png'
+        imageUrl: 'https://i.ibb.co/WgL0h4r/Untitled-design.png'
 
     },
     {
         id: 3,
-        imageUrl: 'https://i.ibb.co/TYYXGT1/Shop-New-Products-Website-Banner-Brown-White-Tan-2.png'
+        imageUrl: 'https://i.ibb.co/4JYqbSK/Untitled-design-2.png'
 
     },
 ]
@@ -125,7 +125,7 @@ const responsive = {
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 2
+        items: 1
     }
 };
 
