@@ -30,7 +30,7 @@ const ImageCarousel = () => {
             autoPlaySpeed={3000}
             autoPlay={true}
             rewind={true}
-            arrows={false}
+            // arrows={false}
             >
                 {
                     images.map(img=><ImageSection key={img.id} img={img.imageUrl} /> )
@@ -62,8 +62,8 @@ const ImageCarousel = () => {
 
 const ImageSection = ({img})=>{
     return(
-        <div className='flex justify-center w-full'>
-            <img title='Crypto Dekho Banner' className='h-[16rem] w-full' src={img} alt="Crypto Dekho" />
+        <div className={`flex justify-center w-full bg-[url('${img}')]`}>
+            {/* <img title='Crypto Dekho Banner' className='h-[16rem] w-full' src={img} alt="Crypto Dekho" /> */}
         </div>
     )
 }

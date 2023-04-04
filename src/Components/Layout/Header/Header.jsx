@@ -24,7 +24,7 @@ const Header = () => {
         }
         else {
             setIsTheme(!isTheme);
-            document.body.setAttribute('data-theme', 'dark')
+            document.body.setAttribute('data-theme', 'night')
         }
 
     }
